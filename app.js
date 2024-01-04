@@ -42,3 +42,9 @@ app.post(`/${firstPath}/delete`, (req, res) => {
 
 // ポート指定で接続
 app.listen(port);
+
+if (process.argv[2] !== 'debug') {
+  // chromeを開く
+  const { spawn } = require("child_process")
+  spawn("start", ["http:" + thisAppUrl, "chrome"], { shell: true })
+}
