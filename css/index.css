@@ -1,0 +1,25 @@
+.urlLine {
+  border-bottom: solid;
+  margin-bottom: 20px;
+}
+
+.uploadButton {
+  display: inline-block;
+  padding: 10px;
+  border: solid;
+  border-radius: 10px;
+  border-color: cornflowerblue;
+  background-color: white;
+  color: cornflowerblue;
+  cursor: pointer;
+  user-select: none;
+}
+
+.uploadButton:hover {
+  background-color: cornflowerblue;
+  color: white;
+}
+
+#shareList {
+  margin-top: 50px;
+}
