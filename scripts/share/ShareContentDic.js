@@ -1,3 +1,4 @@
+import { AnyShareContent } from './shareContent/AnyShareContent.js';
 import { ImageShareContent } from './shareContent/ImageShareContent.js';
 import { TextShareContent } from './shareContent/TextShareContent.js';
 
@@ -9,6 +10,8 @@ export class ShareContentDic {
         return ImageShareContent;
       case 'Text':
         return TextShareContent;
+      case 'AnyFile':
+        return AnyShareContent;
       default:
         null;
     }

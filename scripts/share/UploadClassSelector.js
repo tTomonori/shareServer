@@ -1,9 +1,10 @@
 import { ImageShareContent } from './shareContent/ImageShareContent.js';
 import { TextShareContent } from './shareContent/TextShareContent.js';
+import { AnyShareContent } from './shareContent/AnyShareContent.js';
 
 import { Popup } from '../Popup.js';
 
-const ShareContents = [ImageShareContent, TextShareContent];
+const ShareContents = [ImageShareContent, TextShareContent, AnyShareContent];
 
 export class UploadClassSelector {
   display (callback) {
